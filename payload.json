@@ -1,0 +1,22 @@
+{
+  "makers": [
+    {
+      "id": "maker_1",
+      "name": "Maker 1"
+    },
+    {
+      "id": "maker_2",
+      "name": "Maker 2"
+    }
+  ],
+  "takers": [
+    {
+      "id": "taker_1",
+      "name": "Taker 1"
+    },
+    {
+      "id": "taker_2",
+      "name": "Taker 2"
+    }
+  ]
+}
