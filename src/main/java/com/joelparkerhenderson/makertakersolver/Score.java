@@ -1,9 +1,9 @@
 package com.joelparkerhenderson.makertakersolver;
 import java.util.*;
 
-public class Score {
-    int hard;
-    int soft;
+public class Score implements Cloneable {
+    int hard = 0;
+    int soft = 0;
 
     static final Score ZERO = new Score(0,0);
     static final Score ONE = new Score(1,1);
