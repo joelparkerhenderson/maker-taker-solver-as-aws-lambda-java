@@ -1,15 +1,20 @@
 # Maker Taker Solver as AWS Lambda Java
 
+Maker Taker Solver is a simple constraint satisfaction solver.
+
+* [Introduction](#introduction)
+* [Concepts](#concepts)
+* [Demo](#demo)
+* [Implementation](#implementation)
+
+
+## Introduction
 
 Maker Taker Solver is a simple constraint satisfaction solver.
 
   * This app provides an API via AWS Lambda.
 
   * This app is implemented as Java 11.
-
-To get started, see [doc/new](doc/new).
-
-To run the demo, see [demo](demo).
 
 
 ## Concepts
@@ -25,11 +30,22 @@ A "score" is a contraint weight, and has a hard contraint weight and a soft cons
 A "pair" is a binding of a maker and a taker, with a score.
 
 
-## How this works
+## Demo
+
+To run the demo, see [demo](demo).
+
+To see the JSON input file and output file:
+
+  * [payload of makers and takers](https://github.com/joelparkerhenderson/maker_taker_solver_as_aws_lambda_java/blob/master/demo/payload.json)
+
+  * [response of score pairs](https://github.com/joelparkerhenderson/maker_taker_solver_as_aws_lambda_java/blob/master/demo/response.json)
+
+
+## Implementation
 
 This repository is a simple maker taker solver.
 
-Input
+Input:
 
   * A list of makers
   
@@ -49,7 +65,7 @@ Solver:
 
 Output:
 
-  * A greeting that says "Hello" (we use this for our testing)
+  * A greeting that says "Hello" that we use for testing
 
   * A list of solver pairs
   
