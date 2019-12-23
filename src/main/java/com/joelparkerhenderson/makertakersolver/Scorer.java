@@ -11,11 +11,14 @@ public class Scorer {
         final Score score = new Score();
         maker.getTags().forEach(makerTag -> {
             taker.tags.stream().forEach(takerTag -> {
-                System.out.println("Scorer.byMakerTaker makerTag id:" + makerTag.getId() + " takerTag id:" + takerTag.getId());
-                final Tuple2<String, String> tuple = new Tuple2<String, String>(makerTag.getId(), takerTag.getId());
+                final String makerTagId = makerTag.getId();
+                final String takerTagId = takerTag.getId();
+                System.out.println("Scorer.byMakerTaker makerTag id:" + makerTagId + " takerTag id:" + takerTagId);
+                final Tuple2<String, String> tuple = new Tuple2<String, String>(makerTagId, takerTagId);                
                 if (rubric.containsKey(tuple)) {
                     System.out.println("rubric!");
-                    score.add(rubric.get(tuple));
+                    Score s = rubric.get(tuple);
+                    score.add(s);
                 }
             });
         });

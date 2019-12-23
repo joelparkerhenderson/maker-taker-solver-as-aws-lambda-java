@@ -4,7 +4,7 @@ import java.util.*;
 public class Solver {
 
     public static List<MakerTakerPairScore> solve(
-        final Map<TagPair, Score> rubric,
+        final Map<Tuple2<String, String>, Score> rubric,
         final List<Maker> makers, 
         final List<Taker> takers
     ) {

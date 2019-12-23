@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.*;
 public class Maker {
     String id;
     String name;
-    List<Tag> tags;
+    List<Tag> tags = new ArrayList<Tag>();
 
     public String getId() {
         return id;
