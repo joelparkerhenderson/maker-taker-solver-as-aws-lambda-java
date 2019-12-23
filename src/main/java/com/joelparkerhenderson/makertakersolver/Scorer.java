@@ -16,7 +16,7 @@ public class Scorer {
     }
 
     public static Score scoreTags(Tag a, Tag b) {
-        return Score.ZERO;
+        return (a.id == b.id) ? Score.ONE : Score.ZERO;
     }
 
 }

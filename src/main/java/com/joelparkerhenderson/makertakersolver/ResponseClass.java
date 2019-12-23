@@ -60,11 +60,15 @@ public class ResponseClass {
     public ResponseClass(
         final String greeting,
         final List<Pair> pairs,
+        final List<Tag> tags,
+        final List<Interaction> interactions,
         final List<Maker> makers, 
         final List<Taker> takers
     ) {
         this.greeting = greeting;
         this.pairs = pairs;
+        this.tags = tags;
+        this.interactions = interactions;
         this.makers = makers;
         this.takers = takers;
     }
