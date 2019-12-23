@@ -1,6 +1,8 @@
 package com.joelparkerhenderson.makertakersolver;
 import java.util.*;
+import com.fasterxml.jackson.annotation.*;
 
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "id")
 public class Taker {
     String id;
     String name;
