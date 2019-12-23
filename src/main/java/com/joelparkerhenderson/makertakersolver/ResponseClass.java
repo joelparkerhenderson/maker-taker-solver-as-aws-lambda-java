@@ -9,11 +9,11 @@ public class ResponseClass {
     List<Maker> makers;
     List<Taker> takers;
 
-    public List<Pair> getPairs() {
+    public List<MakerTakerPairScore> getPairs() {
         return pairs;
     }
 
-    public void setPairs(final List<Pair> pairs) {
+    public void setPairs(final List<MakerTakerPairScore> pairs) {
         this.pairs = pairs;
     }
 
