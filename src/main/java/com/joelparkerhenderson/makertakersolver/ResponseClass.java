@@ -8,7 +8,7 @@ public class ResponseClass {
     List<Taker> takers;
 
     public List<Pair> getPairs() {
-        return this.pairs;
+        return pairs;
     }
 
     public void setPairs(final List<Pair> pairs) {
@@ -16,7 +16,7 @@ public class ResponseClass {
     }
 
     public List<Maker> getMakers() {
-        return this.makers;
+        return makers;
     }
 
     public void setMakers(final List<Maker> makers) {
@@ -24,7 +24,7 @@ public class ResponseClass {
     }
 
     public List<Taker> getTakers() {
-        return this.takers;
+        return takers;
     }
 
     public void setTakers(final List<Taker> takers) {

@@ -24,7 +24,7 @@ public class RequestClass {
     }
 
     public List<Maker> getMakers() {
-        return this.makers;
+        return makers;
     }
 
     public void setMakers(final List<Maker> makers) {
@@ -32,7 +32,7 @@ public class RequestClass {
     }
 
     public List<Taker> getTakers() {
-        return this.takers;
+        return takers;
     }
 
     public void setTakers(final List<Taker> takers) {

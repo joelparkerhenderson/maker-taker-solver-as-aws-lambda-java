@@ -6,7 +6,7 @@ public class Pair {
     Taker taker;
 
     public Maker getMaker() {
-        return this.maker;
+        return maker;
     }
 
     public void setMaker(final Maker maker) {
@@ -14,7 +14,7 @@ public class Pair {
     }
 
     public Taker getTaker() {
-        return this.taker;
+        return taker;
     }
 
     public void setTaker(final Taker taker) {
