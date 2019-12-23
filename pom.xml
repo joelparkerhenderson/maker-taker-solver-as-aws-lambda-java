@@ -7,6 +7,11 @@
   <version>1.0-SNAPSHOT</version>
   <name>maker_taker_solver_as_aws_lambda_java</name>
   <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
