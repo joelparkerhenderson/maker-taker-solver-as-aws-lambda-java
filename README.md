@@ -69,6 +69,6 @@ Output:
 
   * A greeting that says "Hello" that we use for testing
 
-  * A list of solver pairs
+  * A list of solver pairs.
   
   * The input lists of tags, interactions, makers, tags; this is for convenience.
