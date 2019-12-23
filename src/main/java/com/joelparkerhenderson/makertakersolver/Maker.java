@@ -5,6 +5,7 @@ public class Maker {
     String id;
     String name;
     List<Tag> tags;
+    List<String> tagIds; // input serialization
 
     public String getId() {
         return id;
@@ -28,6 +29,10 @@ public class Maker {
 
     public void setTags(final List<Tag> tags) {
         this.tags = tags;
+    }
+
+    public void setTagIds(final List<String> tagIds) {
+        this.tagIds = tagIds;
     }
 
 	public Maker(final String id, final String name) {

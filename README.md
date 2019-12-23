@@ -29,6 +29,10 @@ A "score" is a contraint weight, and has a hard contraint weight and a soft cons
 
 A "pair" is a binding of a maker and a taker, with a score.
 
+A "tag" is any kind of attribute, or characteristic, or property.
+
+An "interaction" is a binding of two tags and a score.
+
 
 ## Demo
 
@@ -67,6 +71,6 @@ Output:
 
   * A list of solver pairs
   
-  * Any remaining makers; currently this is an empty array.
+  * The original list of makers; this is for convenience.
   
-  * Any remaining takers; currently this is an empty array.
+  * The original list of takers; this is for convenience.

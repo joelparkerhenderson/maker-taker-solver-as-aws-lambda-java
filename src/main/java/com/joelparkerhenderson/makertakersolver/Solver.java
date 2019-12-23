@@ -11,7 +11,7 @@ public class Solver {
         makers.stream().forEach(maker -> {
             takers.stream().forEach(taker -> {
                 Score score = Scorer.scoreMakerTaker(maker, taker);
-                Pair pair = new Pair(score, maker, taker);
+                Pair pair = new Pair(maker, taker, score);
                 pairs.add(pair);
             });
         });

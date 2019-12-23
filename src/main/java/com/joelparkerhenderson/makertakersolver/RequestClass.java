@@ -4,6 +4,8 @@ import java.util.*;
 public class RequestClass {
     String id;
     String name;
+    List<Tag> tags;
+    List<Interaction> interactions;
     List<Maker> makers;
     List<Taker> takers;
 
@@ -21,6 +23,22 @@ public class RequestClass {
 
     public void setName(final String name) {
         this.name = name;
+    }
+
+    public List<Tag> getTags() {
+        return tags;
+    }
+
+    public void setTags(final List<Tag> tags) {
+        this.tags = tags;
+    }
+
+    public List<Interaction> getInteractions() {
+        return interactions;
+    }
+
+    public void setInteractions(final List<Interaction> interactions) {
+        this.interactions = interactions;
     }
 
     public List<Maker> getMakers() {
