@@ -5,6 +5,8 @@ public class Score {
     int hard;
     int soft;
 
+    static final Score ZERO = new Score(0,0);
+
     public int getHard() {
         return hard;
     }
@@ -28,4 +30,5 @@ public class Score {
 
     public Score() {
     }
+
 }

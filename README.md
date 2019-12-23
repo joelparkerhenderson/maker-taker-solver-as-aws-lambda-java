@@ -55,11 +55,9 @@ Solver:
 
   * The solver is a work in progress, and currently is trivial.
 
-  * Currently the solver pairs the first maker with the first taker.
+  * Currently the solver pairs each maker each taker.
 
   * Currently each pair has a neutral score, which is a hard contraint score of 0, and a soft contraint score of 0.
-
-  * The solver runs on the next maker and taker, and so on, while there are remaining makers and remaining takers.
 
   * TODO: implement constraint scores.
 
@@ -69,6 +67,6 @@ Output:
 
   * A list of solver pairs
   
-  * Any remaining makers
+  * Any remaining makers; currently this is an empty array.
   
-  * Any remaining takers
+  * Any remaining takers; currently this is an empty array.
