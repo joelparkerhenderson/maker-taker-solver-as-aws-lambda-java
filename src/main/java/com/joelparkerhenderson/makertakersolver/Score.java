@@ -1,7 +1,7 @@
 package com.joelparkerhenderson.makertakersolver;
 import java.util.*;
 
-public class HardSoftScore {
+public class Score {
     int hard;
     int soft;
 
@@ -21,11 +21,11 @@ public class HardSoftScore {
         this.soft = soft;
     }
 
-	public HardSoftScore(final int hard, final int soft) {
+	public Score(final int hard, final int soft) {
         this.hard = hard;
         this.soft = soft;
     }
 
-    public HardSoftScore() {
+    public Score() {
     }
 }

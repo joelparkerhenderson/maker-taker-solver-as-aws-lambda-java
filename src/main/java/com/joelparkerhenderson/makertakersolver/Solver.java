@@ -9,9 +9,10 @@ public class Solver {
     ) {
         ArrayList<Pair> pairs = new ArrayList<Pair>();
         while (!makers.isEmpty() && !takers.isEmpty()) {
+            Score score = new Score(0,0);
             Maker maker = makers.remove(0);
             Taker taker = takers.remove(0);
-            Pair pair = new Pair(maker, taker);
+            Pair pair = new Pair(score, maker, taker);
             pairs.add(pair);
         }
         return pairs;
