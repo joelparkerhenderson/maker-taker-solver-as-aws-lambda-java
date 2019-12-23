@@ -60,26 +60,70 @@ Output:
 
 ```json
 {
-  "makers": [
+  "greeting": "Hello",
+  "pairs": [
     {
-      "id": "maker_1",
-      "tName": "Maker 1"
+      "maker": {
+        "id": "maker_1",
+        "name": "Maker 1",
+        "tags": [
+          {
+            "id": "tag_1",
+            "name": "Tag 1"
+          },
+          {
+            "id": "tag_2",
+            "name": "Tag 2"
+          }
+        ]
+      },
+      "taker": {
+        "id": "taker_1",
+        "name": "Taker 1",
+        "tags": [
+          {
+            "id": "tag_5",
+            "name": "Tag 5"
+          },
+          {
+            "id": "tag_6",
+            "name": "Tag 6"
+          }
+        ]
+      }
     },
     {
-      "id": "maker_2",
-      "tName": "Maker 2"
+      "maker": {
+        "id": "maker_2",
+        "name": "Maker 2",
+        "tags": [
+          {
+            "id": "tag_3",
+            "name": "Tag 3"
+          },
+          {
+            "id": "tag_4",
+            "name": "Tag 4"
+          }
+        ]
+      },
+      "taker": {
+        "id": "taker_2",
+        "name": "Taker 2",
+        "tags": [
+          {
+            "id": "tag_7",
+            "name": "Tag 7"
+          },
+          {
+            "id": "tag_8",
+            "name": "Tag 8"
+          }
+        ]
+      }
     }
   ],
-  "takers": [
-    {
-      "id": "taker_1",
-      "tName": "Taker 1"
-    },
-    {
-      "id": "taker_2",
-      "tName": "Taker 2"
-    }
-  ],
-  "greeting": "Hello"
+  "makers": [],
+  "takers": []
 }
 ```

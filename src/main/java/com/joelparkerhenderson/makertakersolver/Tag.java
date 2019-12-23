@@ -1,10 +1,8 @@
 package com.joelparkerhenderson.makertakersolver;
-import java.util.*;
 
-public class Taker {
+public class Tag {
     String id;
     String name;
-    List<Tag> tags;
 
     public String getId() {
         return id;
@@ -22,19 +20,11 @@ public class Taker {
         this.name = name;
     }
 
-    public List<Tag> getTags() {
-        return tags;
-    }
-
-    public void setTags(final List<Tag> tags) {
-        this.tags = tags;
-    }
-
-    public Taker(final String id, final String name) {
+    public Tag(final String id, final String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Taker() {
+    public Tag() {
     }
 }

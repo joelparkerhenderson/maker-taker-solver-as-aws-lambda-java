@@ -2,9 +2,18 @@ package com.joelparkerhenderson.makertakersolver;
 import java.util.*;
 
 public class ResponseClass {
+    String greeting;
+    List<Pair> pairs;
     List<Maker> makers;
     List<Taker> takers;
-    String greeting;
+
+    public List<Pair> getPairs() {
+        return this.pairs;
+    }
+
+    public void setPairs(final List<Pair> pairs) {
+        this.pairs = pairs;
+    }
 
     public List<Maker> getMakers() {
         return this.makers;
@@ -31,13 +40,15 @@ public class ResponseClass {
     }
 
     public ResponseClass(
+        final String greeting,
+        final List<Pair> pairs,
         final List<Maker> makers, 
-        final List<Taker> takers, 
-        final String greeting
+        final List<Taker> takers
     ) {
+        this.greeting = greeting;
+        this.pairs = pairs;
         this.makers = makers;
         this.takers = takers;
-        this.greeting = greeting;
     }
 
     public ResponseClass() {

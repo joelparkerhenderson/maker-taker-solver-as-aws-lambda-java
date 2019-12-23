@@ -1,8 +1,10 @@
 package com.joelparkerhenderson.makertakersolver;
+import java.util.*;
 
 public class Maker {
     String id;
     String name;
+    List<Tag> tags;
 
     public String getId() {
         return id;
@@ -20,7 +22,15 @@ public class Maker {
         this.name = name;
     }
 
-    public Maker(final String id, final String name) {
+    public List<Tag> getTags() {
+        return tags;
+    }
+
+    public void setTags(final List<Tag> tags) {
+        this.tags = tags;
+    }
+
+	public Maker(final String id, final String name) {
         this.id = id;
         this.name = name;
     }
