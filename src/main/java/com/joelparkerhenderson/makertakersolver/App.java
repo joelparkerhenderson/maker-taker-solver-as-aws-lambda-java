@@ -6,8 +6,13 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 
 public class App implements RequestHandler<RequestClass, ResponseClass> {
     public ResponseClass handleRequest(RequestClass request, Context context) {
-        String greetingString = String.format("Hello %s", request.name);
-        return new ResponseClass(greetingString);
+        String greeting = "Hello";
+        ResponseClass response = new ResponseClass(
+            request.makers,
+            request.takers,
+            greeting
+        );
+        return response;
     }
     public static void main(String[] args) {
         System.out.println("Hello");

@@ -109,7 +109,7 @@ package com.joelparkerhenderson.makertakersolver;
 public class RequestClass {
     String name;
 
-    public String gettName() {
+    public String getName() {
         return name;
     }
 
