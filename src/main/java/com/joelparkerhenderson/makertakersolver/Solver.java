@@ -3,12 +3,12 @@ import java.util.*;
 
 public class Solver {
 
-    public static List<Pair> solve(
+    public static List<MakerTakerPairScore> solve(
         final Map<TagPair, Score> rubric,
         final List<Maker> makers, 
         final List<Taker> takers
     ) {
-        final ArrayList<Pair> pairs = new ArrayList<Pair>();
+        final ArrayList<MakerTakerPairScore> pairs = new ArrayList<MakerTakerPairScore>();
         makers.stream().forEach(maker -> {
             takers.stream().forEach(taker -> {
                 Score score = Scorer.byMakerTaker(rubric, maker, taker);
