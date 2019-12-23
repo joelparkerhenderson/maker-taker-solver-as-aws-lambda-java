@@ -4,6 +4,8 @@ import java.util.*;
 public class ResponseClass {
     String greeting;
     List<Pair> pairs;
+    List<Tag> tags;
+    List<Interaction> interactions;
     List<Maker> makers;
     List<Taker> takers;
 
@@ -13,6 +15,22 @@ public class ResponseClass {
 
     public void setPairs(final List<Pair> pairs) {
         this.pairs = pairs;
+    }
+
+    public List<Tag> getTags() {
+        return tags;
+    }
+
+    public void setTags(final List<Tag> tags) {
+        this.tags = tags;
+    }
+
+    public List<Interaction> getInteractions() {
+        return interactions;
+    }
+
+    public void setInteractions(final List<Interaction> interactions) {
+        this.interactions = interactions;
     }
 
     public List<Maker> getMakers() {

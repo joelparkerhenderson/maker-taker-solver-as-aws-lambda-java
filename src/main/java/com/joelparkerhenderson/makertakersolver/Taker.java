@@ -5,7 +5,6 @@ public class Taker {
     String id;
     String name;
     List<Tag> tags;
-    List<String> tagIds; // input serialization
 
     public String getId() {
         return id;
@@ -29,10 +28,6 @@ public class Taker {
 
     public void setTags(final List<Tag> tags) {
         this.tags = tags;
-    }
-
-    public void setTagIds(final List<String> tagIds) {
-        this.tagIds = tagIds;
     }
 
     public Taker(final String id, final String name) {

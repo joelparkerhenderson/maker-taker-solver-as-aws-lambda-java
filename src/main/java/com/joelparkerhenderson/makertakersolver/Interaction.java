@@ -1,25 +1,15 @@
 package com.joelparkerhenderson.makertakersolver;
-import java.util.*;
 
 public class Interaction {
-    String makerTagId;
-    String takerTagId;
+    TagPair tagPair;
     Score score;
     
-    public String getMakerTagId() {
-        return makerTagId;
+    public TagPair getTagPair() {
+        return tagPair;
     }
 
-    public void setMakerTagId(final String makerTagId) {
-        this.makerTagId = makerTagId;
-    }
-
-    public String getTakerTagId() {
-        return takerTagId;
-    }
-
-    public void setTakerTagId(final String takerTagId) {
-        this.takerTagId = takerTagId;
+    public void setTagPair(final TagPair tagPair) {
+        this.tagPair = tagPair;
     }
 
     public Score getScore() {
@@ -30,9 +20,8 @@ public class Interaction {
         this.score = score;
     }
 
-	public Interaction(final Tag makerTagId, final Tag takerTagId, final Score score) {
-        this.makerTagId = makerTagId;
-        this.takerTagId = takerTagId;
+	public Interaction(final TagPair tagPair, final Score score) {
+        this.tagPair = tagPair;
         this.score = score;
     }
 

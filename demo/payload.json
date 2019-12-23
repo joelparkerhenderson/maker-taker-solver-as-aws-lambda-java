@@ -1,50 +1,54 @@
 {
   "tags": [
     {
-      "id": "tag_1",
+      "@id": "tag_1",
       "name": "Tag 1"
     },
     {
-      "id": "tag_2",
+      "@id": "tag_2",
       "name": "Tag 2"
     },
     {
-      "id": "tag_3",
+      "@id": "tag_3",
       "name": "Tag 3"
     },
     {
-      "id": "tag_4",
+      "@id": "tag_4",
       "name": "Tag 4"
     },
     {
-      "id": "tag_5",
+      "@id": "tag_5",
       "name": "Tag 5"
     },
     {
-      "id": "tag_6",
+      "@id": "tag_6",
       "name": "Tag 6"
     },
     {
-      "id": "tag_7",
+      "@id": "tag_7",
       "name": "Tag 7"
     },
     {
-      "id": "tag_8",
+      "@id": "tag_8",
       "name": "Tag 8"
     }
   ],
   "interactions": [
     {
-      "makerTagId": "tag_1",
-      "takerTagId": "tag_5",
+      "tagPair": {
+        "makerTag": {"@id": "tag_1"},
+        "takerTag": {"@id": "tag_5"}
+      },
       "score": {
         "hard": 1,
         "soft": 2
       }
     },
     {
-      "makerTagId": "tag_2",
-      "takerTagId": "tag_6",
+      "tagPair": {
+        "makerTag": {"@id": "tag_2"},
+        "takerTag": {"@id": "tag_6"}
+      },
       "score": {
         "hard": 3,
         "soft": 4
@@ -53,37 +57,37 @@
   ],
   "makers": [
     {
-      "id": "maker_1",
+      "@id": "maker_1",
       "name": "Maker 1",
-      "tagIds": [
-        "tag_1",
-        "tag_2"
+      "tags": [
+        { "@id": "tag_1" },
+        { "@id": "tag_2" }
       ]
     },
     {
-      "id": "maker_2",
+      "@id": "maker_2",
       "name": "Maker 2",
-      "tagIds": [
-        "tag_3",
-        "tag_4"
+      "tags": [
+        {"@id": "tag_3"},
+        {"@id": "tag_4"}
       ]
     }
   ],
   "takers": [
     {
-      "id": "taker_1",
+      "@id": "taker_1",
       "name": "Taker 1",
-      "tagIds": [
-        "tag_5",
-        "tag_6"
+      "tags": [
+        {"@id": "tag_5"},
+        {"@id": "tag_6"}
       ]
     },
     {
-      "id": "taker_2",
+      "@id": "taker_2",
       "name": "Taker 2",
-      "tagIds": [
-        "tag_7",
-        "tag_8"
+      "tags": [
+        {"@id": "tag_7"},
+        {"@id": "tag_8"}
       ]
     }
   ]

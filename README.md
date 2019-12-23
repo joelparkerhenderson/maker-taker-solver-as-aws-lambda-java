@@ -71,6 +71,4 @@ Output:
 
   * A list of solver pairs
   
-  * The original list of makers; this is for convenience.
-  
-  * The original list of takers; this is for convenience.
+  * The input lists of tags, interactions, makers, tags; this is for convenience.

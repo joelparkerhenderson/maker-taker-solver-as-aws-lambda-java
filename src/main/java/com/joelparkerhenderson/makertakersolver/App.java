@@ -15,6 +15,8 @@ public class App implements RequestHandler<RequestClass, ResponseClass> {
         ResponseClass response = new ResponseClass(
             greeting,
             pairs,
+            request.tags,
+            request.interactions,
             request.makers,
             request.takers
         );
