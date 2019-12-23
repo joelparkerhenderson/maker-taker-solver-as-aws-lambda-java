@@ -3,7 +3,7 @@ import java.util.*;
 
 public class ResponseClass {
     String greeting;
-    List<Pair> pairs;
+    List<MakerTakerPairScore> pairs;
     List<Tag> tags;
     List<Interaction> interactions;
     List<Maker> makers;
@@ -59,7 +59,7 @@ public class ResponseClass {
 
     public ResponseClass(
         final String greeting,
-        final List<Pair> pairs,
+        final List<MakerTakerPairScore> pairs,
         final List<Tag> tags,
         final List<Interaction> interactions,
         final List<Maker> makers, 

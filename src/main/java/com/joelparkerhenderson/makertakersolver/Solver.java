@@ -12,7 +12,7 @@ public class Solver {
         makers.stream().forEach(maker -> {
             takers.stream().forEach(taker -> {
                 Score score = Scorer.byMakerTaker(rubric, maker, taker);
-                Pair pair = new Pair(maker, taker, score);
+                MakerTakerPairScore pair = new MakerTakerPairScore(maker, taker, score);
                 pairs.add(pair);
             });
         });

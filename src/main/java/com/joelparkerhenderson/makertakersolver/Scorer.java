@@ -9,11 +9,13 @@ public class Scorer {
         final Maker maker, 
         final Taker taker
     ) {
-        Score score = Score.ZERO;
-        maker.tags.stream().forEach(makerTag -> {
+        final Score score = new Score();
+        maker.getTags().forEach(makerTag -> {
             taker.tags.stream().forEach(takerTag -> {
-                TagPair tagPair = new TagPair(makerTag, takerTag);
+                System.out.println("Scorer.byMakerTaker makerTag id:" + makerTag.getId() + " takerTag id:" + takerTag.getId());
+                final TagPair tagPair = new TagPair(makerTag, takerTag);
                 if (rubric.containsKey(tagPair)) {
+                    System.out.println("rubric!");
                     score.add(rubric.get(tagPair));
                 }
             });

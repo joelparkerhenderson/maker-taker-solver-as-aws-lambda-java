@@ -1,7 +1,7 @@
 package com.joelparkerhenderson.makertakersolver;
 import java.util.*;
 
-public class Pair {
+public class MakerTakerPairScore {
     Maker maker;
     Taker taker;
     Score score;
@@ -30,12 +30,12 @@ public class Pair {
         this.score = score;
     }
 
-    public Pair(final Maker maker, final Taker taker, final Score score) {
+    public MakerTakerPairScore(final Maker maker, final Taker taker, final Score score) {
         this.maker = maker;
         this.taker = taker;
         this.score = score;
     }
 
-    public Pair() {
+    public MakerTakerPairScore() {
     }
 }
