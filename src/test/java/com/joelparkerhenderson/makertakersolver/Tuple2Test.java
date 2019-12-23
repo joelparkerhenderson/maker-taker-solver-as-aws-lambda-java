@@ -8,8 +8,8 @@ public class Tuple2Test {
 
     @Test
     public void newWithParams() {
-        String i0 = "i0"
-        String i1 = "i1"
+        final String i0 = "i0";
+        final String i1 = "i1";
         final Tuple2<String, String> o = new Tuple2(i0, i1);
         assertEquals(i0, o.getI0());
         assertEquals(i1, o.getI1());
