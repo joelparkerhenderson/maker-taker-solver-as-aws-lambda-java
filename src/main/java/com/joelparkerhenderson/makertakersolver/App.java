@@ -9,8 +9,16 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 public class App implements RequestHandler<RequestClass, ResponseClass> {
     
     public ResponseClass handleRequest(final RequestClass request, final Context context) {
-        final Map<TagPair, Score> rubric = request.interactions.stream().collect(Collectors.toMap(Interaction::getTagPair, Interaction::getScore));    
-        final List<Pair> pairs = Solver.solve(rubric, request.makers, request.takers);
+        final Map<Tuple2<String, String>, Score> rubric = request.interactions.stream().collect(
+            Collectors.toMap(
+                interaction -> new Tuple2<String, String>(
+                    interaction.getTagPair().getMakerTag().getId(),
+                    interaction.getTagPair().getTakerTag().getId()
+                ),
+                Interaction::getScore
+            )
+        );
+        final List<MakerTakerPairScore> pairs = Solver.solve(rubric, request.makers, request.takers);
         final String greeting = "Hello";
         final ResponseClass response = new ResponseClass(
             greeting,
